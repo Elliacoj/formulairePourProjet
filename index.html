@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de demande</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logoupto"></div>
+            <div id="titre">Formulaire d'inscription</div>
+            <div id="logothierache"></div>
+        </header>
+        
+        <main>
+            <section>
+                <form action="" method="post">
+                    <div>
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </div>
+
+                    <div>
+                        <label for="pName">Prénom:</label>
+                        <input type="text" id="pName" name="user_name" required>
+                    </div>
+
+                    <div>
+                        <label for="nameEntreprise">Nom de l'entreprise:</label>
+                        <input type="text" id="nameEntreprise" name="user_name" required>
+                    </div>
+
+                    <div>
+                        <label for="secteurActivite">Secteur d'activité:</label>
+                        <select name="user_name" id="secteurActivite">
+                            <option value="Agroalimentaire">Agroalimentaire</option>
+                            <option value="Bois/Papier/Carton/Imprimerie">Bois/Papier/Carton/Imprimerie</option>
+                            <option value="Chimie/Parachimie">Chimie/Parachimie</option>
+                            <option value="Edition/Communication/Multimédia">Edition/Communication/Multimédia</option>
+                            <option value="Etudes et conseils">Etudes et conseils</option>
+                            <option value="Informatique/Télécoms">Informatique/Télécoms</option>
+                            <option value="Mérallurgie/Travail du métal">Mérallurgie/Travail du métal</option>
+                            <option value="Services aux entreprises">Services aux entreprises</option>
+                            <option value="Transports/Logistique">Transports/Logistique</option>
+                            <option value="Banque/Assurance">Banque/Assurance</option>
+                            <option value="BTP/Matériaux de construction">BTP/Matériaux de construction</option>
+                            <option value="Commerce/Négoce/Distribution">Commerce/Négoce/Distribution</option>
+                            <option value="Electronique/Electricité">Electronique/Electricité</option>
+                            <option value="Industrie pharmaceutique">Industrie pharmaceutique</option>
+                            <option value="Machine et équipements/Automobile">Machine et équipements/Automobile</option>
+                            <option value="Plastique/Caoutchouc">Plastique/Caoutchouc</option>
+                            <option value="Textile/Habillement/chaussure">Textile/Habillement/chaussure</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="statutJuridique">Statut juridique:</label>
+                        <select name="user_name" id="statutJuridique">
+                            <option value="individuelle">Entreprise individuelle</option>
+                            <option value="EIRL">EIRL</option>
+                            <option value="SARL">SARL</option>
+                            <option value="EURL">EURL</option>
+                            <option value="SAS">SAS</option>
+                            <option value="SASU">SASU</option>
+                            <option value="SA">SA</option>
+                            <option value="SNC">SNC</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="siret">Siret:</label>
+                        <input type="text" id="siret" name="user_name" pattern="[0-9]{9}"
+                               placeholder="ex: 123456789" required>
+                    </div>
+
+                    <div>
+                        <label for="adresse">Adresse:</label>
+                        <input type="text" id="adresse" name="user_name" required>
+                    </div>
+
+                    <div>
+                        <label for="ville">Ville:</label>
+                        <input type="text" id="ville" name="user_name" required>
+                    </div>
+
+                    <div>
+                        <label for="telephone">Téléphone:</label>
+                        <input type="tel" id="telephone" name="user_name"  required>
+                    </div>
+
+                    <div>
+                        <label for="adressemail">Adresse e-mail:</label>
+                        <input type="email" id="adressemail" name="user_name" required>
+                    </div>
+
+                    <div>
+                        <label for="besoinNumerique">Vos besoins numériques:</label>
+                        <textarea id="besoinNumerique" name="user_name" rows="10"></textarea>
+                    </div>
+
+                    <a href="mailto:amaury.jocaille@hotmail.com">
+                        <input type="submit" value="Envoyer"></a>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
